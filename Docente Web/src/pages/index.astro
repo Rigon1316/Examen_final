@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import DocenteManager from '../components/DocenteManager.jsx';
+---
+
+<Layout title="Sistema de Docentes">
+	<main class="min-h-screen py-10">
+		<DocenteManager client:load />
+	</main>
+</Layout>
