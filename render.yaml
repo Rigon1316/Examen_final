@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: examen-final-backend
+    runtime: docker
+    region: oregon
+    plan: free
+    branch: main
+    repo: https://github.com/Rigon1316/Examen_final
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: PORT
+        value: 8080
